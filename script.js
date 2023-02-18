@@ -9,21 +9,21 @@ function updateGallery() {
 }
 
 function getNewImages() {
-  $.get('https://api.unsplash.com/search/photos?client_id=j0z73f4p5WNBe2OK28CHq-GY9kN2GxPj2DpS_bV6nFs&page=1&per_page=9&orientation=squarish&query='+$('.gallery__search input').val(),function(data){
+  (async () => {
+    const response = await fetch('https://api.github.com/repos/jjdengjj/jjdengjj.github.io/contents/gallery/');
+    const data = await response.json();
     let items = [];
-    $.each(data.results,function(index, item){
-      console.log(item);
+    for (let file of data) {
       let newItem = {
-        id: item.id,
-        url: item.urls.regular,
-        thumb: item.urls.thumb
-      }
+        id: file.name,
+        url: "https://www.rand2ai.org/gallery/".concat(file.name),
+        thumb: "https://www.rand2ai.org/gallery/".concat(file.name)
+        }
       items.push(newItem);
-    });
-    console.log(items);
+    }
     galleryItems = items;
     updateGallery();
-  });
+  })();
 }
 
 $('.gallery__search input').on('keyup',debounce(() => getNewImages()));
@@ -103,12 +103,13 @@ let galleryItems = [
     }
 ];
 
+getNewImages();
 updateGallery(); // once on load
 
-function debounce(func, timeout = 300){
-  let timer;
-  return (...args) => {
-    clearTimeout(timer);
-    timer = setTimeout(() => { func.apply(this, args); }, timeout);
-  };
-}
+// function debounce(func, timeout = 300){
+//   let timer;
+//   return (...args) => {
+//     clearTimeout(timer);
+//     timer = setTimeout(() => { func.apply(this, args); }, timeout);
+//   };
+// }
