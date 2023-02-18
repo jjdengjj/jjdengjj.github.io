@@ -61,7 +61,7 @@
   position: relative;
   z-index: 1;
   margin: 0 75px 0 20px;
-  width: 520px;
+  width: 620px;
   max-width: calc(100% - 95px);
 }
 .gallery__core {
