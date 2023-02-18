@@ -93,9 +93,13 @@
   top: 10px;
   right: 0;
   transform: translate(60px, 0);
-  display: flex;
-  flex-direction: column;
+  display: -webkit-flex;
+  -webkit-flex-direction: column;
+  -webkit-flex-wrap: wrap;
   align-items: center;
+  height: auto;
+  max-height: 620px;
+  gap: 10px;
 }
 .gallery__track__item {
   width: 43px;
