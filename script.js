@@ -26,7 +26,7 @@ function getNewImages() {
   })();
 }
 
-$('.gallery__search input').on('keyup',debounce(() => getNewImages()));
+// $('.gallery__search input').on('keyup',debounce(() => getNewImages()));
 $('.gallery__track').on('click','.gallery__track__item',function(){
   if (!switching) {
     switching = true;
@@ -56,15 +56,20 @@ $('.gallery__track').on('click','.gallery__track__item',function(){
 });
 
 let galleryItems = [
+  {
+    id:'None',
+    url: "https://www.rand2ai.org/img/favicon.ico",
+    thumb: "https://www.rand2ai.org/img/favicon.ico"
+  }
 ];
 
 getNewImages();
 updateGallery(); // once on load
 
-function debounce(func, timeout = 300){
-  let timer;
-  return (...args) => {
-    clearTimeout(timer);
-    timer = setTimeout(() => { func.apply(this, args); }, timeout);
-  };
-}
+// function debounce(func, timeout = 300){
+//   let timer;
+//   return (...args) => {
+//     clearTimeout(timer);
+//     timer = setTimeout(() => { func.apply(this, args); }, timeout);
+//   };
+// }
