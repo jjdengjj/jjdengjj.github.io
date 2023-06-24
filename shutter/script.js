@@ -16,8 +16,8 @@ function getNewImages() {
     for (let file of data) {
       let newItem = {
         id: file.name,
-        url: "https://www.rand2ai.org/shutter/moment/".concat(file.name),
-        thumb: "https://www.rand2ai.org/shutter/moment/".concat(file.name)
+        url: "https://www.rand2ai.com/shutter/moment/".concat(file.name),
+        thumb: "https://www.rand2ai.com/shutter/moment/".concat(file.name)
         }
       items.push(newItem);
     }
