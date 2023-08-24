@@ -16,8 +16,8 @@ function getNewImages() {
     for (let file of data) {
       let newItem = {
         id: file.name,
-        url: "https://www.rand2ai.com/gallery/".concat(file.name),
-        thumb: "https://www.rand2ai.com/gallery/".concat(file.name)
+        url: "https://www.rand2ai.io/gallery/".concat(file.name),
+        thumb: "https://www.rand2ai.io/gallery/".concat(file.name)
         }
       items.push(newItem);
     }
@@ -58,8 +58,8 @@ $('.gallery__track').on('click','.gallery__track__item',function(){
 let galleryItems = [
   {
     id:'None',
-    url: "https://www.rand2ai.org/img/favicon.ico",
-    thumb: "https://www.rand2ai.org/img/favicon.ico"
+    url: "https://www.rand2ai.io/img/favicon.ico",
+    thumb: "https://www.rand2ai.io/img/favicon.ico"
   }
 ];
 
