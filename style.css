@@ -125,3 +125,15 @@
   height: 40px;
   border: 3px solid white;
 }
+
+details {
+  text-align: right;
+}
+
+summary{
+  color:blue;
+}
+
+summary:hover{
+  color:red;
+}
