@@ -128,6 +128,9 @@
 
 details {
   text-align: right;
+  transition: max-height 400ms ease-out;
+  max-height: 10rem;
+  overflow: hidden;
 }
 
 summary{
