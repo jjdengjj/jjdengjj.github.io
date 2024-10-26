@@ -20,6 +20,13 @@
   	</style>
 	<script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
 	<script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+	<script>
+		window.onload = function() {
+			var months = ['January', 'February', 'March', 'April', 'May', 'June', 'July', 'August', 'September', 'October', 'November', 'December'];;
+    		var date = new Date();
+			document.getElementById('date').innerHTML = months[date.getMonth()] + ' ' + date.getFullYear();
+		};
+	</script>
 </head>
 
 <body leftmargin="40" bgcolor="#FFFFFF" link="#444444" text="#444444">
@@ -33,7 +40,7 @@
 					<font size="5"><b>&nbsp;Jingjing Deng &nbsp;<span lang="zh-cn">邓晶晶</span></b></font>
 					<p><font  style="font-size: 11pt;">&nbsp; Assistant Professor (PhD, FHEA)</font></p>
 					<p><font  style="font-size: 11pt;">&nbsp; <a href="#rand2ai"><img height="20px" border="0" src="./img/rand2ai.png" style="margin-right: 3px; margin-bottom:-5px">Rand<sup>2</sup>AI Laboratory</a>, <a href="https://vivid.webspace.durham.ac.uk/" target="_blank">VIViD Research Group</a></font></p>
-					<p><font  style="font-size: 11pt;">&nbsp; <a href="https://www.durham.ac.uk/departments/academic/computer-science/" target="_blank">Computer Science</a>, <a href="http://www.durham.ac.uk/" target="_blank"><img height="20px" border="0" src="./img/Durham.png" style="margin-right: 3px; margin-bottom:-5px">Durham University</a>, UK</font></p>
+					<p><font  style="font-size: 11pt;">&nbsp; <a href="http://www.durham.ac.uk/" target="_blank"><img height="20px" border="0" src="./img/Durham.png" style="margin-right: 3px; margin-bottom:-5px">Durham University</a>, <a href="https://www.durham.ac.uk/departments/academic/computer-science/" target="_blank">Computer Science</a>, UK</font></p>
 					<p><font  style="font-size: 11pt;">&nbsp;&nbsp;</font><img height="40px" border="0" src="./img/email.du.png" style="margin-left: -8px; margin-top: 0px; margin-bottom: -25px;"></p>
 				</td>
 			</tr>
@@ -44,7 +51,7 @@
 		<tbody>
 			<tr>
 				<td style="border-style: none; border-width: medium;">
-					<p style="margin-top: 3px; margin-bottom: 3px; margin-left: 60px;" align="justify"><font style="font-size: 11pt;">I am an Assistant Professor in the Department of Computer Science at Durham University. My research covers a range of topics in visual computing and machine learning. I am leading the Rand2AI Lab which focuses on developing computational models that can cultivate and generalise intelligence from and for the complex visual world. We are actively working on challenging problems that are motivated by industrial practices and theoretical principles across disciplines.</font>				 
+					<p style="margin-top: 3px; margin-bottom: 3px; margin-left: 60px;" align="justify"><font style="font-size: 11pt;">I am an Assistant Professor of the <a href="https://www.durham.ac.uk/departments/academic/computer-science/" target="_blank">Department of Computer Science</a> at <a href="http://www.durham.ac.uk/" target="_blank">Durham University</a>, as of <ins id="date" style="text-decoration:none;"></ins>. My research covers a range of topics in visual computing and machine learning. I lead the Rand2AI Lab aiming to develop computational models that can cultivate and generalise intelligence from and for the complex visual world. We are actively working on challenging problems that are motivated by industrial practices and theoretical principles across fundamental disciplines.</font>				 
 				</td>
 			</tr>
 		</tbody>
@@ -87,27 +94,27 @@
 	<p><b><font  size="4">Selected Publications</font></b></p>
 	<p style="margin-left: 24px; width: 620px;"><font  style="font-size: 11pt;">For the most recent works, the pre-print can be found on <a href="http://arxiv.org/a/deng_j_1" target="_blank">arXiv</a>, the code are hosted on <a href="https://github.com/Rand2AI" target="_blank">GitHub</a>.</font></p>
 	
-	<p style="margin-left: 36px; width: 620px;"><font style="font-size: 10pt;"><b>Machine Learning</b> - Deep Neural Networks</font></p>
+	<p style="margin-left: 36px; width: 620px;"><font style="font-size: 10pt;"><b>Federated Learning</b></font></p>
 	<ul style="width: 600px;">
 		<li><p align="justify"><font  size="2">📑 Xie X., Hu C., Ren H. and Deng J. <i>A Survey on Vulnerability of Federated Learning: A Learning Algorithm Perspective</i>, Neurocomputing, 2024. [ <a href="https://doi.org/10.1016/j.neucom.2023.127225" target="_blank">Elsevier</a> | <a href="https://arxiv.org/abs/2311.16065" target="_blank">Pre-Print</a> | <a href="https://github.com/Rand2AI/Awesome-Vulnerability-of-Federated-Learning" target="_blank">Github-Page</a> ]</font></p></li>
 		<li><p align="justify"><font  size="2">📑 Ren H., Deng J., Xie X., Ma X. and Ma J., <i>Gradient Leakage Defense with Key-Lock Module for Federated Learning</i>, arXiv:2305.04095, 2023. [ <a href="https://arxiv.org/abs/2305.04095" target="_blank">Pre-Print</a> | <a href="https://github.com/Rand2AI/FedKL" target="_blank">Code-PyTorch</a> ]</font></p></li>
+		<li><p align="justify"><font  size="2">📑 Ren H., Deng J. and Xie X., <i>GRNN: Generative Regression Neural Network - A Data Leakage Attack for Federated Learning</i>, ACM Transactions on Intelligent Systems and Technology (TIST), 2022. [ <a href="https://doi.org/10.1145/3510032" target="_blank">ACM</a> | <a href="https://arxiv.org/abs/2105.00529" target="_blank">Pre-Print</a> | <a href="https://github.com/Rand2AI/GRNN" target="_blank">Code-PyTorch</a> | <a href="https://worldwide.espacenet.com/patent/search/family/076377782/publication/WO2022223629A1?q=pn%3DWO2022223629A1" target="_blank">Patent</a> (WO2022223629A1, Pending) ]</font></p></li>
 	</ul>
 	<details style="margin-left: 0px; margin-top: -12px; width: 690px;">
 		<summary><font style="font-size: 10pt;">More</font></summary>
 		<ul style="width: 600px; margin-top: -12px;">
 			<li><p align="justify"><font  size="2">📑 Ren H., Deng J., Xie X., Ma X. and Wang Y., <i>FedBoosting: Federated Learning with Gradient Protected Boosting for Text Recognition</i>, Neurocomputing, 2024. [ <a href="https://doi.org/10.1016/j.neucom.2023.127126" target="_blank">Elsevier</a> | <a href="https://arxiv.org/abs/2007.07296" target="_blank">Pre-Print</a> | <a href="https://github.com/Rand2AI/FedBoosting" target="_blank">Code-PyTorch</a> ]</font></p></li>
-			<li><p align="justify"><font  size="2">📑 Ren H., Deng J. and Xie X., <i>GRNN: Generative Regression Neural Network - A Data Leakage Attack for Federated Learning</i>, ACM Transactions on Intelligent Systems and Technology (TIST), 2022. [ <a href="https://doi.org/10.1145/3510032" target="_blank">ACM</a> | <a href="https://arxiv.org/abs/2105.00529" target="_blank">Pre-Print</a> | <a href="https://github.com/Rand2AI/GRNN" target="_blank">Code-PyTorch</a> | <a href="https://worldwide.espacenet.com/patent/search/family/076377782/publication/WO2022223629A1?q=pn%3DWO2022223629A1" target="_blank">Patent</a> (WO2022223629A1, Pending) ]</font></p></li>
 		</ul>
 	</details>
 
-	<p style="margin-left: 36px; margin-top: 24px; width: 620px;"><font style="font-size: 10pt;"><b>Computer Vision</b> - Detection & Segmentation</font></p>
+	<p style="margin-left: 36px; margin-top: 24px; width: 620px;"><font style="font-size: 10pt;"><b>3D Representation</b></font></p>
 	<ul style="width: 600px;">
-		<li><p align="justify"><font  size="2">📑 Li Y., Ren H., Deng J., Ma X. and Xie X., <i>CenterSAM: Fully Automatic Prompt for Dense Nucleus Segmentation</i>, IEEE International Symposium on Biomedical Imaging (ISBI), 2024. [ <a href="#" target="_blank">IEEE</a> | <a href="https://github.com/Rand2AI/CenterSAM" target="_blank">Code-PyTorch</a> ]</font></p></li>
 		<li><p align="justify"><font  size="2">📑 Deng J. and Xie X., <i>3D Interactive Segmentation with Semi-Implicit Representation and Active Learning</i>, IEEE Transactions on Image Processing (TIP), 2021. [ <a href="https://ieeexplore.ieee.org/document/9611087" target="_blank">IEEE</a> | <a href="./src/NU-IBS.Code.zip" target="_blank">Code-Xcode</a> ]</font></p></li> 
 	</ul>
 	<details style="margin-left: 0px; margin-top: -12px; width: 690px;">
 		<summary><font style="font-size: 10pt;">More</font></summary>
-		<ul style="width: 600px; margin-left: -36px; margin-top: -12px;">
+		<ul style="width: 600px; margin-top: -12px;">
+			<li><p align="justify"><font  size="2">📑 Li Y., Ren H., Deng J., Ma X. and Xie X., <i>CenterSAM: Fully Automatic Prompt for Dense Nucleus Segmentation</i>, IEEE International Symposium on Biomedical Imaging (ISBI), 2024. [ <a href="#" target="_blank">IEEE</a> | <a href="https://github.com/Rand2AI/CenterSAM" target="_blank">Code-PyTorch</a> ]</font></p></li>
 		</ul>
 	</details>
 	<p class="style4"><br></p>
@@ -131,7 +138,10 @@
 	<p style="margin-left: 24px; width: 620px;" align="justify"><font  style="font-size: 11pt;">So far, I have successfully supervised 1 Ph.D and 1 M.Res students up to their completion. I am very fortunate to work with the following colleagues and students.</font></p>
 	<ul style="width: 600px;">
 		<li><p align="justify"><font size="2">2024, Research Student, Ms. Yueyue Hu (Primary, Durham University).</font></p></li>
+		<li><p align="justify"><font size="2">2024, Research Student, Mr. Yongzhi Liao (Ext.-Co- with Prof. Di Lu, Xidian University).</font></p></li>
+		<li><p align="justify"><font size="2">2024, Research Student, Mr. Jianqiang Li (Ext.-Co- with Dr. Liumei Zhang, Xi'an Shiyou University).</font></p></li>
 		<li><p align="justify"><font size="2">2024, Visiting Scholars, <a href="https://scholar.google.com/citations?user=iaeyFpgAAAAJ&hl=en" target="_blank">Dr. Lei Jiang</a>, Research Fellow, University College London (UCL), funded by Engineering and Physical Sciences Research Council (EPSRC).</font></p></li>
+		<li><p align="justify"><font size="2">2023, Research Student, Mr. Tianlong Feng (Ext.-Co- with Prof. Di Lu, Xidian University).</font></p></li>
 		<li><p align="justify"><font size="2">2023, Research Student, Ms. Mridula Vijendran (Co- with Dr Hubert Shum, Durham University).</font></p></li>
 		<li><p align="justify"><font size="2">2023, Research Student, Mr. Tianyu Zhang (Co- with Dr. Yang Long, Durham University).</font></p></li>
 		<li><p align="justify"><font size="2">2022, Research Student, Mr. Chen Hu (Ext.-Co- with Prof. Xianghua Xie, Swansea University), partially funded by Faculty of Science and Engineering.</font></p></li>
