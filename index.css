@@ -1,0 +1,23 @@
+:root {
+    --backgound: #f6f6f6;
+    --backgound-overlay: rgba(255, 255, 255, 0.4);
+    --font-colour: #202020
+  }
+  :root.dark-mode {
+    --backgound: #202020;
+    --backgound-overlay: rgba(32, 32, 32, 0.8);
+    --font-colour: #f6f6f6
+  }
+  
+  :root.dark-mode #theme-toggler:before {
+    content: "\f185"; /* sun */
+  }
+  #theme-toggler:before {
+    content: "\f186"; /* moon */
+  }
+  
+a:link {color: var(--primary-color); text-decoration: none;}
+  
+a:visited{color: var(--primary-color); text-decoration: none;}
+  
+body {font-family: 'Arial'; color: var(--font-colour); background: var(--backgound); transition: background .4s ease-out;}

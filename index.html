@@ -5,6 +5,7 @@
 	<meta content="en-us" http-equiv="Content-Language">
 	<title>Jingjing Deng - Durham University</title>
 	<link rel="shortcut icon" type="image/x-icon" href="img/favicon.ico">
+	<link rel="stylesheet" href="index.css">
 	<!-- Global site tag (gtag.js) - Google Analytics -->
 	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-43079355-2"></script>
 	<script>
@@ -13,12 +14,7 @@
 	  gtag('js', new Date());
 	  gtag('config', 'UA-43079355-2');
 	</script>
-	<style>
-		a:link {color: blue; text-decoration: none;}
-		a:visited{color: blue; text-decoration: none;}
-		body {font-family: 'Arial';}
-  	</style>
-	<script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+	<script src="https://cdnjs.cloudflare.com/polyfill/v3/polyfill.min.js"></script>
 	<script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
 	<script>
 		window.onload = function() {
@@ -27,9 +23,10 @@
 			document.getElementById('date').innerHTML = months[date.getMonth()] + ' ' + date.getFullYear();
 		};
 	</script>
+	<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" rel="stylesheet"/>
 </head>
 
-<body leftmargin="40" bgcolor="#FFFFFF" link="#444444" text="#444444">
+<body leftmargin="40">
 	<table border="0" id="table1" width="666" style="margin-left: -40px;">
 		<tbody>
 			<tr>
@@ -37,7 +34,8 @@
 					<p align="center"><font ><img border="0" src="./img/APProfile.png" height="200px"></font></p>
 				</td>
 				<td>
-					<font size="5"><b>&nbsp;Jingjing Deng &nbsp;<span lang="zh-cn">邓晶晶</span></b></font>
+					<span style="float:right"><button type="button" id="theme-toggler" class="fas" style="height:30px;width:30px;margin-top:3px;"></button></span>
+					<font size="5"><b>&nbsp;Jingjing Deng &nbsp;<span lang="zh-cn">邓晶晶</span></b></font> 
 					<p><font style="font-size: 11pt;">&nbsp; Assistant Professor (PhD, FHEA)</font></p>
 					<p><font style="font-size: 11pt;">&nbsp; <a href="#rand2ai"><img height="20px" border="0" src="./img/rand2ai.png" style="margin-right: 3px; margin-bottom:-5px">Rand<sup>2</sup>AI Lab</a>, <a href="https://vivid.webspace.durham.ac.uk/" target="_blank">VIViD Research Group</a></font></p>
 					<p><font style="font-size: 11pt;">&nbsp; <a href="http://www.durham.ac.uk/" target="_blank"><img height="20px" border="0" src="./img/Durham.png" style="margin-right: 5px; margin-bottom:-5px">Durham University</a>, <a href="https://www.durham.ac.uk/departments/academic/computer-science/" target="_blank">Computer Science</a>, UK</font></p>
@@ -263,9 +261,8 @@
 	-->
 
 
-	<p>
-		<script src="https://efreecode.com/js.js" id="eXF-jjdengjj-1" async defer></script>
-	</p>
+	<p><script src="https://efreecode.com/js.js" id="eXF-jjdengjj-1" async defer></script></p>
+	<script src="index.js"></script>
 	<p><font size="1" ><i>Updated: December 2024</i></font></p>
 </body>
 </html>
