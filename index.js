@@ -3,6 +3,8 @@ function invert(){
   document.getElementById("teamlogo").style.filter="invert(100%)";
   document.getElementById("githublogo").style.filter="invert(100%)";
   document.getElementById("email").style.filter="invert(100%)";
+  document.getElementById("characterzhong").style.filter="invert(100%)";
+  document.getElementById("charactershe").style.filter="invert(100%)";
   };
 
   function noninvert(){
@@ -10,6 +12,8 @@ function invert(){
     document.getElementById("teamlogo").style.filter="invert(0%)";
     document.getElementById("githublogo").style.filter="invert(0%)";
     document.getElementById("email").style.filter="invert(0%)";
+    document.getElementById("characterzhong").style.filter="invert(0%)";
+    document.getElementById("charactershe").style.filter="invert(0%)";
     };
 
 
