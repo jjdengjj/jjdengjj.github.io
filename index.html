@@ -14,6 +14,13 @@
 	  gtag('js', new Date());
 	  gtag('config', 'UA-43079355-2');
 	</script>
+	<script>
+		window.onload = function() {
+			var months = ['January', 'February', 'March', 'April', 'May', 'June', 'July', 'August', 'September', 'October', 'November', 'December'];;
+    		var date = new Date();
+			document.getElementById('date').innerHTML = months[date.getMonth()] + ' ' + date.getFullYear();
+		};
+	</script>
 	
 </head>
 
